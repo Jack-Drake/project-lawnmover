@@ -32,8 +32,7 @@ private:
   std::vector<disk_color> _colors;
 
 public:
-  disk_state(size_t light_count)
-      : _colors(light_count * 2, DISK_LIGHT)
+  disk_state(size_t light_count) : _colors(light_count * 2, DISK_LIGHT)
   {
 
     assert(light_count > 0);
